@@ -1,0 +1,76 @@
+@startuml
+
+MJRefreshAutoFooter -up--|> MJRefreshFooter
+MJRefreshBackFooter -up--|> MJRefreshFooter
+MJRefreshFooter -up--|> MJRefreshComponent
+MJRefreshHeader -up--|> MJRefreshComponent
+MJRefreshAutoGifFooter -up--|> MJRefreshAutoStateFooter
+MJRefreshAutoNormalFooter -up--|> MJRefreshAutoStateFooter
+MJRefreshAutoStateFooter -up--|> MJRefreshAutoFooter
+MJRefreshBackGifFooter -up--|> MJRefreshBackStateFooter
+MJRefreshBackNormalFooter -up--|> MJRefreshBackStateFooter
+MJRefreshBackStateFooter -up--|> MJRefreshBackFooter
+MJRefreshGifHeader -up--|> MJRefreshStateHeader
+MJRefreshNormalHeader -up--|> MJRefreshStateHeader
+MJRefreshStateHeader -up--|> MJRefreshHeader
+MJChiBaoZiFooter -up--|> MJRefreshAutoGifFooter
+MJChiBaoZiFooter2 -up--|> MJRefreshBackGifFooter
+MJChiBaoZiHeader -up--|> MJRefreshGifHeader
+MJDIYAutoFooter -up--|> MJRefreshAutoFooter
+MJDIYBackFooter -up--|> MJRefreshBackFooter
+MJDIYHeader -up--|> MJRefreshHeader
+MJExampleViewController -up--|> UITableViewController
+MJExampleWindow -up--|> UIWindow
+MJNavigationController -up--|> UINavigationController
+MJSingleViewController -up--|> UITableViewController
+MJTempViewController -up--|> UIViewController
+AppDelegate -up--|> UIResponder
+MJCollectionViewController -up--|> UICollectionViewController
+MJTableViewController -up--|> UITableViewController
+MJTestViewController -up--|> UIViewController
+MJWebViewViewController -up--|> UIViewController
+MJRefreshExampleTests -up--|> XCTestCase
+
+
+class MJRefreshAutoFooter
+class MJRefreshFooter
+class MJRefreshBackFooter
+class MJRefreshComponent
+class MJRefreshHeader
+class MJRefreshAutoGifFooter
+class MJRefreshAutoStateFooter
+class MJRefreshAutoNormalFooter
+class MJRefreshBackGifFooter
+class MJRefreshBackStateFooter
+class MJRefreshBackNormalFooter
+class MJRefreshGifHeader
+class MJRefreshStateHeader
+class MJRefreshNormalHeader
+class MJChiBaoZiFooter
+class MJChiBaoZiFooter2
+class MJChiBaoZiHeader
+class MJDIYAutoFooter
+class MJDIYBackFooter
+class MJDIYHeader
+class MJExampleViewController
+class UITableViewController
+class MJExampleWindow
+class UIWindow
+class MJNavigationController
+class UINavigationController
+class MJSingleViewController
+class MJTempViewController
+class UIViewController
+class AppDelegate
+class UIResponder
+class MJCollectionViewController
+class UICollectionViewController
+class MJTableViewController
+class MJTestViewController
+class MJWebViewViewController
+class MJRefreshExampleTests
+class XCTestCase
+
+
+
+@enduml

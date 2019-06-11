@@ -14,6 +14,7 @@
 #import "MJExample.h"
 #import "UIViewController+Example.h"
 #import "MJRefresh.h"
+#import "CAIHCollectionViewController.h"
 
 static NSString *const MJExample00 = @"UITableView + 下拉刷新";
 static NSString *const MJExample10 = @"UITableView + 上拉刷新";
@@ -53,7 +54,13 @@ static NSString *const MJExample30 = @"UIWebView";
         exam3.titles = @[@"下拉刷新"];
         exam3.methods = @[@"example31"];
         
-        self.examples = @[exam0, exam1, exam2, exam3];
+        MJExample *exam4 = [[MJExample alloc] init];
+        exam4.header = MJExample30;
+        exam4.vcClass = [CAIHCollectionViewController class];
+        exam4.titles = @[@"下拉刷新"];
+        exam4.methods = @[@"example32"];
+        
+        self.examples = @[exam0, exam1, exam2, exam3, exam4];
     }
     return _examples;
 }
