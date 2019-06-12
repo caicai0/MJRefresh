@@ -15,5 +15,7 @@
 #import "CAIHRefreshAutoFooter.h"
 #import "CAIHRefreshBackFooter.h"
 #import "CAIHRefreshStateHeader.h"
+#import "CAIHRefreshAutoStateFooter.h"
+#import "CAIHRefreshAutoNormalFooter.h"
 
 #endif /* CAIHRefresh_h */

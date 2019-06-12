@@ -101,6 +101,14 @@
 		4B66A4B922AFD01900757141 /* CAIHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4B822AFD01900757141 /* CAIHCollectionViewController.m */; };
 		4B66A4BC22AFD10300757141 /* UIScrollView+CAIHRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4BB22AFD10300757141 /* UIScrollView+CAIHRefresh.m */; };
 		4B66A4C022AFD5EB00757141 /* CAIHRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4BF22AFD5EB00757141 /* CAIHRefreshComponent.m */; };
+		4B66A4C322AFE6F700757141 /* CAIHRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4C222AFE6F700757141 /* CAIHRefreshGifHeader.m */; };
+		4B66A4C622AFE71200757141 /* CAIHRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4C522AFE71200757141 /* CAIHRefreshNormalHeader.m */; };
+		4B66A4CB22AFE78A00757141 /* CAIHRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4CA22AFE78A00757141 /* CAIHRefreshAutoStateFooter.m */; };
+		4B66A4CE22AFE7B100757141 /* CAIHRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4CD22AFE7B100757141 /* CAIHRefreshAutoNormalFooter.m */; };
+		4B66A4D122AFE7F700757141 /* CAIHRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4D022AFE7F700757141 /* CAIHRefreshAutoGifFooter.m */; };
+		4B66A4D722AFE87700757141 /* CAIHRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4D622AFE87700757141 /* CAIHRefreshBackStateFooter.m */; };
+		4B66A4DA22AFE8B100757141 /* CAIHRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4D922AFE8B100757141 /* CAIHRefreshBackGifFooter.m */; };
+		4B66A4DD22AFE8F900757141 /* CAIHRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B66A4DC22AFE8F900757141 /* CAIHRefreshBackNormalFooter.m */; };
 		84FC857E228037CE001C6728 /* MJRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A2CE0B21ACE01500BEE365 /* MJRefreshConfig.m */; };
 /* End PBXBuildFile section */
 
@@ -237,6 +245,22 @@
 		4B66A4BD22AFD2F700757141 /* CAIHRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefresh.h; sourceTree = "<group>"; };
 		4B66A4BE22AFD5EB00757141 /* CAIHRefreshComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshComponent.h; sourceTree = "<group>"; };
 		4B66A4BF22AFD5EB00757141 /* CAIHRefreshComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshComponent.m; sourceTree = "<group>"; };
+		4B66A4C122AFE6F700757141 /* CAIHRefreshGifHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshGifHeader.h; sourceTree = "<group>"; };
+		4B66A4C222AFE6F700757141 /* CAIHRefreshGifHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshGifHeader.m; sourceTree = "<group>"; };
+		4B66A4C422AFE71200757141 /* CAIHRefreshNormalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshNormalHeader.h; sourceTree = "<group>"; };
+		4B66A4C522AFE71200757141 /* CAIHRefreshNormalHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshNormalHeader.m; sourceTree = "<group>"; };
+		4B66A4C922AFE78A00757141 /* CAIHRefreshAutoStateFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		4B66A4CA22AFE78A00757141 /* CAIHRefreshAutoStateFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		4B66A4CC22AFE7B100757141 /* CAIHRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		4B66A4CD22AFE7B100757141 /* CAIHRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		4B66A4CF22AFE7F700757141 /* CAIHRefreshAutoGifFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		4B66A4D022AFE7F700757141 /* CAIHRefreshAutoGifFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		4B66A4D522AFE87700757141 /* CAIHRefreshBackStateFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		4B66A4D622AFE87700757141 /* CAIHRefreshBackStateFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		4B66A4D822AFE8B100757141 /* CAIHRefreshBackGifFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		4B66A4D922AFE8B100757141 /* CAIHRefreshBackGifFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		4B66A4DB22AFE8F900757141 /* CAIHRefreshBackNormalFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIHRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		4B66A4DC22AFE8F900757141 /* CAIHRefreshBackNormalFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIHRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -560,6 +584,10 @@
 			children = (
 				4B66A4B422AFCE8E00757141 /* CAIHRefreshStateHeader.h */,
 				4B66A4B522AFCE8E00757141 /* CAIHRefreshStateHeader.m */,
+				4B66A4C122AFE6F700757141 /* CAIHRefreshGifHeader.h */,
+				4B66A4C222AFE6F700757141 /* CAIHRefreshGifHeader.m */,
+				4B66A4C422AFE71200757141 /* CAIHRefreshNormalHeader.h */,
+				4B66A4C522AFE71200757141 /* CAIHRefreshNormalHeader.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -567,8 +595,36 @@
 		4B66A4B022AFC83700757141 /* Footer */ = {
 			isa = PBXGroup;
 			children = (
+				4B66A4C722AFE73800757141 /* Auto */,
+				4B66A4C822AFE73F00757141 /* back */,
 			);
 			path = Footer;
+			sourceTree = "<group>";
+		};
+		4B66A4C722AFE73800757141 /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				4B66A4C922AFE78A00757141 /* CAIHRefreshAutoStateFooter.h */,
+				4B66A4CA22AFE78A00757141 /* CAIHRefreshAutoStateFooter.m */,
+				4B66A4CC22AFE7B100757141 /* CAIHRefreshAutoNormalFooter.h */,
+				4B66A4CD22AFE7B100757141 /* CAIHRefreshAutoNormalFooter.m */,
+				4B66A4CF22AFE7F700757141 /* CAIHRefreshAutoGifFooter.h */,
+				4B66A4D022AFE7F700757141 /* CAIHRefreshAutoGifFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		4B66A4C822AFE73F00757141 /* back */ = {
+			isa = PBXGroup;
+			children = (
+				4B66A4D522AFE87700757141 /* CAIHRefreshBackStateFooter.h */,
+				4B66A4D622AFE87700757141 /* CAIHRefreshBackStateFooter.m */,
+				4B66A4D822AFE8B100757141 /* CAIHRefreshBackGifFooter.h */,
+				4B66A4D922AFE8B100757141 /* CAIHRefreshBackGifFooter.m */,
+				4B66A4DB22AFE8F900757141 /* CAIHRefreshBackNormalFooter.h */,
+				4B66A4DC22AFE8F900757141 /* CAIHRefreshBackNormalFooter.m */,
+			);
+			path = back;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -771,19 +827,25 @@
 				2D9BEB0F1BB15F4A00AED473 /* MJDIYHeader.m in Sources */,
 				2D9BEB181BB15F4A00AED473 /* MJTableViewController.m in Sources */,
 				2DB2EA261BECBE6700D58F6A /* MJRefreshConst.m in Sources */,
+				4B66A4D122AFE7F700757141 /* CAIHRefreshAutoGifFooter.m in Sources */,
 				2D9BEB0A1BB15F4A00AED473 /* MJChiBaoZiFooter.m in Sources */,
 				2D9BEB121BB15F4A00AED473 /* MJExampleWindow.m in Sources */,
 				2DB2EA221BECBE6700D58F6A /* MJRefreshGifHeader.m in Sources */,
+				4B66A4CB22AFE78A00757141 /* CAIHRefreshAutoStateFooter.m in Sources */,
 				2D9BEB131BB15F4A00AED473 /* MJNavigationController.m in Sources */,
+				4B66A4C622AFE71200757141 /* CAIHRefreshNormalHeader.m in Sources */,
 				2DB2EA271BECBE6700D58F6A /* UIScrollView+MJExtension.m in Sources */,
 				4B66A4A422AFACBB00757141 /* CAIHRefreshHeader.m in Sources */,
 				2DB2EA1F1BECBE6700D58F6A /* MJRefreshBackGifFooter.m in Sources */,
 				2DB2EA1C1BECBE6700D58F6A /* MJRefreshAutoGifFooter.m in Sources */,
 				2DB2EA231BECBE6700D58F6A /* MJRefreshNormalHeader.m in Sources */,
+				4B66A4DA22AFE8B100757141 /* CAIHRefreshBackGifFooter.m in Sources */,
 				2DB2EA191BECBE6700D58F6A /* MJRefreshComponent.m in Sources */,
+				4B66A4DD22AFE8F900757141 /* CAIHRefreshBackNormalFooter.m in Sources */,
 				4B66A4B922AFD01900757141 /* CAIHCollectionViewController.m in Sources */,
 				2D9BEB0E1BB15F4A00AED473 /* MJDIYBackFooter.m in Sources */,
 				2D9BEB161BB15F4A00AED473 /* AppDelegate.m in Sources */,
+				4B66A4C322AFE6F700757141 /* CAIHRefreshGifHeader.m in Sources */,
 				2DB2EA291BECBE6700D58F6A /* UIView+MJExtension.m in Sources */,
 				2D9BEB141BB15F4A00AED473 /* MJSingleViewController.m in Sources */,
 				4B66A4AD22AFC48700757141 /* CAIHRefreshBackFooter.m in Sources */,
@@ -791,11 +853,13 @@
 				2D9BEB1B1BB15F4A00AED473 /* MJWebViewViewController.m in Sources */,
 				2DB2EA171BECBE6700D58F6A /* MJRefreshAutoFooter.m in Sources */,
 				4B66A4AA22AFB42A00757141 /* CAIHRefreshAutoFooter.m in Sources */,
+				4B66A4CE22AFE7B100757141 /* CAIHRefreshAutoNormalFooter.m in Sources */,
 				2D9BEB101BB15F4A00AED473 /* MJExample.m in Sources */,
 				2DB2EA201BECBE6700D58F6A /* MJRefreshBackNormalFooter.m in Sources */,
 				4B66A4A722AFB2DE00757141 /* CAIHRefreshFooter.m in Sources */,
 				2DA7F92B1AA6B4C4005627AB /* main.m in Sources */,
 				2DB2EA1E1BECBE6700D58F6A /* MJRefreshAutoStateFooter.m in Sources */,
+				4B66A4D722AFE87700757141 /* CAIHRefreshBackStateFooter.m in Sources */,
 				2DB2EA241BECBE6700D58F6A /* MJRefreshStateHeader.m in Sources */,
 				2D9BEB091BB15F4A00AED473 /* UIViewController+Example.m in Sources */,
 				2D9BEB111BB15F4A00AED473 /* MJExampleViewController.m in Sources */,

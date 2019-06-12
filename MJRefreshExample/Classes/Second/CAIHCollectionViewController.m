@@ -49,22 +49,21 @@ static const CGFloat MJDuration = 2.0;
     [self.collectionView.caih_header beginRefreshing];
     
     // 上拉刷新
-    self.collectionView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+    self.collectionView.caih_footer = [CAIHRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         // 增加5条假数据
         for (int i = 0; i<5; i++) {
             [weakSelf.colors addObject:MJRandomColor];
         }
-        
+
         // 模拟延迟加载数据，因此2秒后才调用（真实开发中，可以移除这段gcd代码）
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(MJDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [weakSelf.collectionView reloadData];
-            
+
             // 结束刷新
-            [weakSelf.collectionView.mj_footer endRefreshing];
+            [weakSelf.collectionView.caih_footer endRefreshing];
         });
     }];
-    // 默认先隐藏footer
-    self.collectionView.mj_footer.hidden = YES;
+    self.collectionView.caih_footer.hidden = YES;
 }
 
 #pragma mark - 数据相关
@@ -110,7 +109,7 @@ static NSString *const MJCollectionViewCellIdentifier = @"color";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     // 设置尾部控件的显示和隐藏
-    self.collectionView.mj_footer.hidden = self.colors.count == 0;
+    self.collectionView.caih_footer.hidden = self.colors.count == 0;
     return self.colors.count;
 }
 

@@ -10,7 +10,7 @@
 
 @interface CAIHRefreshHeader()
 
-@property (assign, nonatomic) CGFloat insetTDelta;
+@property (assign, nonatomic) CGFloat insetLDelta;
 
 @end
 
@@ -56,11 +56,11 @@
     }
     
     // sectionheader停留解决
-    CGFloat insetT = - self.scrollView.mj_offsetX > _scrollViewOriginalInset.left ? - self.scrollView.mj_offsetX : _scrollViewOriginalInset.left;
-    insetT = insetT > self.mj_w + _scrollViewOriginalInset.left ? self.mj_w + _scrollViewOriginalInset.left : insetT;
-    self.scrollView.mj_insetT = insetT;
+    CGFloat insetL = - self.scrollView.mj_offsetX > _scrollViewOriginalInset.left ? - self.scrollView.mj_offsetX : _scrollViewOriginalInset.left;
+    insetL = insetL > self.mj_w + _scrollViewOriginalInset.left ? self.mj_w + _scrollViewOriginalInset.left : insetL;
+    self.scrollView.mj_insetL = insetL;
     
-    self.insetTDelta = _scrollViewOriginalInset.left - insetT;
+    self.insetLDelta = _scrollViewOriginalInset.left - insetL;
 }
 
 
@@ -121,7 +121,7 @@
         
         // 恢复inset和offset
         [UIView animateWithDuration:MJRefreshSlowAnimationDuration animations:^{
-            self.scrollView.mj_insetT += self.insetTDelta;
+            self.scrollView.mj_insetL += self.insetLDelta;
             
             if (self.endRefreshingAnimateCompletionBlock) {
                 self.endRefreshingAnimateCompletionBlock();
@@ -136,21 +136,26 @@
             }
         }];
     } else if (state == MJRefreshStateRefreshing) {
-        MJRefreshDispatchAsyncOnMainQueue({
-            [UIView animateWithDuration:MJRefreshFastAnimationDuration animations:^{
-                if (self.scrollView.panGestureRecognizer.state != UIGestureRecognizerStateCancelled) {
-                    CGFloat left = self.scrollViewOriginalInset.left + self.mj_w;
-                    // 增加滚动区域top
-                    self.scrollView.mj_insetT = left;
-                    // 设置滚动位置
-                    CGPoint offset = self.scrollView.contentOffset;
-                    offset.x = -left;
-                    [self.scrollView setContentOffset:offset animated:NO];
-                }
-            } completion:^(BOOL finished) {
-                [self executeRefreshingCallback];
-            }];
-        })
+        __weak typeof(self) weakSelf = self;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            typeof(weakSelf) self = weakSelf;
+            {
+                [UIView animateWithDuration:MJRefreshFastAnimationDuration animations:^{
+                    if (self.scrollView.panGestureRecognizer.state != UIGestureRecognizerStateCancelled) {
+                        CGFloat left = self.scrollViewOriginalInset.left + self.mj_w;
+                        // 增加滚动区域top
+                        self.scrollView.mj_insetL = left;
+                        // 设置滚动位置
+                        CGPoint offset = self.scrollView.contentOffset;
+                        offset.x = -left;
+                        NSLog(@"%@",@(offset));
+                        [self.scrollView setContentOffset:offset animated:NO];
+                    }
+                } completion:^(BOOL finished) {
+                    [self executeRefreshingCallback];
+                }];
+            }
+        });
     }
 }
 

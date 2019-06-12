@@ -145,6 +145,7 @@
                     // 设置滚动位置
                     CGPoint offset = self.scrollView.contentOffset;
                     offset.y = -top;
+                    NSLog(@"%@",@(offset));
                     [self.scrollView setContentOffset:offset animated:NO];
                 }
             } completion:^(BOOL finished) {

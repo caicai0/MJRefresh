@@ -74,7 +74,7 @@
     
     if (self.state != MJRefreshStateIdle || !self.automaticallyRefresh || self.mj_x == 0) return;
     
-    if (_scrollView.mj_insetT + _scrollView.mj_contentW > _scrollView.mj_w) { // 内容超过一个屏幕
+    if (_scrollView.mj_insetL + _scrollView.mj_contentW > _scrollView.mj_w) { // 内容超过一个屏幕
         // 这里的_scrollView.mj_contentW替换掉self.mj_x更为合理
         if (_scrollView.mj_offsetX >= _scrollView.mj_contentW - _scrollView.mj_w + self.mj_w * self.triggerAutomaticallyRefreshPercent + _scrollView.mj_insetR - self.mj_w) {
             // 防止手松开时连续调用
@@ -93,11 +93,11 @@
     [super scrollViewPanStateDidChange:change];
     
     if (self.state != MJRefreshStateIdle) return;
-    
+
     UIGestureRecognizerState panState = _scrollView.panGestureRecognizer.state;
     if (panState == UIGestureRecognizerStateEnded) {// 手松开
-        if (_scrollView.mj_insetT + _scrollView.mj_contentW <= _scrollView.mj_w) {  // 不够一个屏幕
-            if (_scrollView.mj_offsetX >= - _scrollView.mj_insetT) { // 向上拽
+        if (_scrollView.mj_insetL + _scrollView.mj_contentW <= _scrollView.mj_w) {  // 不够一个屏幕
+            if (_scrollView.mj_offsetX >= - _scrollView.mj_insetL) { // 向上拽
                 [self beginRefreshing];
             }
         } else { // 超出一个屏幕

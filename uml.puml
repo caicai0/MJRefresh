@@ -13,8 +13,21 @@ MJRefreshBackStateFooter -up--|> MJRefreshBackFooter
 MJRefreshGifHeader -up--|> MJRefreshStateHeader
 MJRefreshNormalHeader -up--|> MJRefreshStateHeader
 MJRefreshStateHeader -up--|> MJRefreshHeader
+CAIHRefreshAutoFooter -up--|> CAIHRefreshFooter
+CAIHRefreshBackFooter -up--|> CAIHRefreshFooter
+CAIHRefreshComponent -up--|> MJRefreshComponent
+CAIHRefreshFooter -up--|> CAIHRefreshComponent
+CAIHRefreshHeader -up--|> CAIHRefreshComponent
+CAIHRefreshAutoGifFooter -up--|> CAIHRefreshAutoStateFooter
+CAIHRefreshAutoNormalFooter -up--|> CAIHRefreshAutoStateFooter
+CAIHRefreshAutoStateFooter -up--|> CAIHRefreshAutoFooter
+CAIHRefreshBackGifFooter -up--|> CAIHRefreshBackStateFooter
+CAIHRefreshBackNormalFooter -up--|> CAIHRefreshBackStateFooter
+CAIHRefreshBackStateFooter -up--|> CAIHRefreshBackFooter
+CAIHRefreshGifHeader -up--|> CAIHRefreshStateHeader
+CAIHRefreshNormalHeader -up--|> CAIHRefreshStateHeader
+CAIHRefreshStateHeader -up--|> CAIHRefreshHeader
 MJChiBaoZiFooter -up--|> MJRefreshAutoGifFooter
-MJChiBaoZiFooter2 -up--|> MJRefreshBackGifFooter
 MJChiBaoZiHeader -up--|> MJRefreshGifHeader
 MJDIYAutoFooter -up--|> MJRefreshAutoFooter
 MJDIYBackFooter -up--|> MJRefreshBackFooter
@@ -25,8 +38,10 @@ MJNavigationController -up--|> UINavigationController
 MJSingleViewController -up--|> UITableViewController
 MJTempViewController -up--|> UIViewController
 AppDelegate -up--|> UIResponder
+CAIHCollectionViewController -up--|> UICollectionViewController
 MJCollectionViewController -up--|> UICollectionViewController
 MJTableViewController -up--|> UITableViewController
+MJChiBaoZiFooter2 -up--|> MJRefreshBackGifFooter
 MJTestViewController -up--|> UIViewController
 MJWebViewViewController -up--|> UIViewController
 MJRefreshExampleTests -up--|> XCTestCase
@@ -46,8 +61,21 @@ class MJRefreshBackNormalFooter
 class MJRefreshGifHeader
 class MJRefreshStateHeader
 class MJRefreshNormalHeader
+class CAIHRefreshAutoFooter
+class CAIHRefreshFooter
+class CAIHRefreshBackFooter
+class CAIHRefreshComponent
+class CAIHRefreshHeader
+class CAIHRefreshAutoGifFooter
+class CAIHRefreshAutoStateFooter
+class CAIHRefreshAutoNormalFooter
+class CAIHRefreshBackGifFooter
+class CAIHRefreshBackStateFooter
+class CAIHRefreshBackNormalFooter
+class CAIHRefreshGifHeader
+class CAIHRefreshStateHeader
+class CAIHRefreshNormalHeader
 class MJChiBaoZiFooter
-class MJChiBaoZiFooter2
 class MJChiBaoZiHeader
 class MJDIYAutoFooter
 class MJDIYBackFooter
@@ -63,9 +91,11 @@ class MJTempViewController
 class UIViewController
 class AppDelegate
 class UIResponder
-class MJCollectionViewController
+class CAIHCollectionViewController
 class UICollectionViewController
+class MJCollectionViewController
 class MJTableViewController
+class MJChiBaoZiFooter2
 class MJTestViewController
 class MJWebViewViewController
 class MJRefreshExampleTests
